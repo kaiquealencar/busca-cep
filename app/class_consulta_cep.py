@@ -8,7 +8,7 @@ class ConsultaCep:
         if not cep.isdigit() or len(cep) != 8:
             return {"Erro: CEP deve conter 8 digitos numéricos"}
         
-        url = f"{self.url_base}{cep}/json"
+        url = f"{self.url_base}{cep}/json" 
         response = requests.get(url)
         
         if response.status_code != 200:

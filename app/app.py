@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from class_consulta_cep import ConsultaCep
+from app.class_consulta_cep import ConsultaCep
 
 app = Flask(__name__)
 
