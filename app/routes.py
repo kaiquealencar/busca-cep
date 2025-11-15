@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request
 from .class_consulta_cep import ConsultaCep
 
-bp = Blueprint("app", __name__)
+bp = Blueprint("main", __name__)
 
 consulta = ConsultaCep()
 
