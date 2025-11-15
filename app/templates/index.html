@@ -14,7 +14,7 @@
 
     <form method="POST">
         <label>Digite o CEP:</label>
-        <input type="text" name="cep" maxlength="8" required>
+        <input type="text" name="cep" id="cep" maxlength="8" required>
         <button type="submit">Consultar</button>
     </form>
 
@@ -32,5 +32,8 @@
             </ul>
         {% endif %}
     {% endif %}
+    <script>
+        document.getElementById("cep").focus();
+    </script>
 </body>
 </html>
